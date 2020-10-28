@@ -1,3 +1,28 @@
+## ros_babel_fish (kinetic) - 0.9.0-1
+
+The packages in the `ros_babel_fish` repository were released into the `kinetic` distro by running `/usr/local/bin/bloom-release ros_babel_fish --track kinetic --rosdistro kinetic --new-track` on `Wed, 28 Oct 2020 15:15:14 -0000`
+
+These packages were released:
+- `ros_babel_fish`
+- `ros_babel_fish_test_msgs`
+
+Version of package(s) in repository `ros_babel_fish`:
+
+- upstream repository: https://github.com/StefanFabian/ros_babel_fish.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.9.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.10.0`
+- catkin_pkg version: `0.4.22`
+- rosdep version: `0.19.0`
+- rosdistro version: `0.8.2`
+- vcstools version: `0.1.42`
+
+
 ## ros_babel_fish (melodic) - 0.8.0-3
 
 The packages in the `ros_babel_fish` repository were released into the `melodic` distro by running `/usr/bin/bloom-release ros_babel_fish --rosdistro melodic` on `Sun, 05 Apr 2020 12:02:55 -0000`
