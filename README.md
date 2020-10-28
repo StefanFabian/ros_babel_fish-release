@@ -1,3 +1,28 @@
+## ros_babel_fish (noetic) - 0.9.0-1
+
+The packages in the `ros_babel_fish` repository were released into the `noetic` distro by running `/usr/local/bin/bloom-release ros_babel_fish --track noetic --rosdistro noetic --new-track` on `Wed, 28 Oct 2020 15:52:47 -0000`
+
+These packages were released:
+- `ros_babel_fish`
+- `ros_babel_fish_test_msgs`
+
+Version of package(s) in repository `ros_babel_fish`:
+
+- upstream repository: https://github.com/StefanFabian/ros_babel_fish.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.9.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.10.0`
+- catkin_pkg version: `0.4.23`
+- rosdep version: `0.19.0`
+- rosdistro version: `0.8.3`
+- vcstools version: `0.1.42`
+
+
 ## ros_babel_fish (melodic) - 0.9.0-1
 
 The packages in the `ros_babel_fish` repository were released into the `melodic` distro by running `/usr/local/bin/bloom-release ros_babel_fish --rosdistro melodic` on `Wed, 28 Oct 2020 15:38:53 -0000`
