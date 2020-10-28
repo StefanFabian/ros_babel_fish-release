@@ -1,0 +1,12 @@
+Source: ros-melodic-ros-babel-fish
+Section: misc
+Priority: optional
+Maintainer: Stefan Fabian <ros_babel_fish@stefanfabian.me>
+Build-Depends: debhelper (>= 9.0.0), openssl, ros-melodic-actionlib, ros-melodic-catkin, ros-melodic-geometry-msgs, ros-melodic-ros-babel-fish-test-msgs, ros-melodic-rosapi, ros-melodic-roscpp, ros-melodic-roscpp-tutorials, ros-melodic-rosgraph-msgs, ros-melodic-roslib, ros-melodic-rostest, ros-melodic-std-msgs, ros-melodic-std-srvs, ros-melodic-visualization-msgs
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-melodic-ros-babel-fish
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, openssl, ros-melodic-actionlib, ros-melodic-roscpp, ros-melodic-roslib
+Description: The ros_babel_fish package
