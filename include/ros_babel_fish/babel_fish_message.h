@@ -14,10 +14,46 @@ namespace ros_babel_fish
 {
 
 /*!
+ * A read-only interface for BabelFishMessage.
+ */
+class IBabelFishMessage
+{
+public:
+  typedef boost::shared_ptr<IBabelFishMessage> Ptr;
+  typedef boost::shared_ptr<const IBabelFishMessage> ConstPtr;
+
+  virtual ~IBabelFishMessage() = default;
+
+  virtual const std::string &md5Sum() const = 0;
+
+  virtual const std::string &dataType() const = 0;
+
+  virtual const std::string &__getServerMD5Sum() const
+  {
+    static const std::string missing = "*";
+    return missing;
+  }
+
+  virtual const std::string &__getServiceDatatype() const
+  {
+    static const std::string missing = "*";
+    return missing;
+  }
+
+  virtual const std::string &definition() const = 0;
+
+  virtual bool isLatched() const = 0;
+
+  virtual uint32_t size() const = 0;
+
+  virtual const uint8_t *buffer() const = 0;
+};
+
+/*!
  * A message that can store any type of message.
  * The message contents can be retrieved by translating it with a BabelFish.
  */
-class BabelFishMessage
+class BabelFishMessage : public IBabelFishMessage
 {
 public:
   typedef boost::shared_ptr<BabelFishMessage> Ptr;
@@ -25,23 +61,23 @@ public:
 
   BabelFishMessage();
 
-  BabelFishMessage(const BabelFishMessage &other);
+  BabelFishMessage( const BabelFishMessage &other );
 
-  BabelFishMessage &operator=(const BabelFishMessage &other);
+  BabelFishMessage &operator=( const BabelFishMessage &other );
 
-  virtual ~BabelFishMessage();
+  ~BabelFishMessage();
 
-  const std::string &md5Sum() const;
+  const std::string &md5Sum() const final;
 
-  const std::string &dataType() const;
+  const std::string &dataType() const final;
 
-  const std::string &__getServerMD5Sum() const;
+  const std::string &__getServerMD5Sum() const final;
 
-  const std::string &__getServiceDatatype() const;
+  const std::string &__getServiceDatatype() const final;
 
-  const std::string &definition() const;
+  const std::string &definition() const final;
 
-  bool isLatched() const;
+  bool isLatched() const final;
 
   void morph( const std::string &md5sum, const std::string &datatype, const std::string &definition,
               bool latched = false, const std::string &server_md5sum = "*" );
@@ -78,11 +114,11 @@ public:
   /*!
    * @return The size of the message which is the number of used bytes.
    */
-  uint32_t size() const;
+  uint32_t size() const final;
 
   uint8_t *buffer() { return buffer_; }
 
-  const uint8_t *buffer() const { return buffer_; }
+  const uint8_t *buffer() const final { return buffer_; }
 
   void allocate( size_t size );
 
@@ -99,10 +135,10 @@ private:
   uint32_t buffer_used_;
 };
 
-class BabelFishMessageException : public ros::Exception
+class BabelFishMessageException : public BabelFishException
 {
 public:
-  explicit BabelFishMessageException( const std::string &msg ) : ros::Exception( msg ) { }
+  explicit BabelFishMessageException( const std::string &msg ) : BabelFishException( msg ) { }
 };
 } // ros_babel_fish
 
