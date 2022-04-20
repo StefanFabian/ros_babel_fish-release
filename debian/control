@@ -1,0 +1,13 @@
+Source: ros-melodic-ros-babel-fish
+Section: misc
+Priority: optional
+Maintainer: Stefan Fabian <ros_babel_fish@stefanfabian.me>
+Build-Depends: debhelper (>= 9.0.0), libssl-dev, openssl, ros-melodic-actionlib, ros-melodic-catkin, ros-melodic-geometry-msgs <!nocheck>, ros-melodic-ros-babel-fish-test-msgs <!nocheck>, ros-melodic-rosapi <!nocheck>, ros-melodic-roscpp, ros-melodic-roscpp-tutorials <!nocheck>, ros-melodic-rosgraph-msgs <!nocheck>, ros-melodic-roslib, ros-melodic-rostest <!nocheck>, ros-melodic-std-msgs <!nocheck>, ros-melodic-std-srvs <!nocheck>, ros-melodic-visualization-msgs <!nocheck>
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-melodic-ros-babel-fish
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libssl-dev, openssl, ros-melodic-actionlib, ros-melodic-roscpp, ros-melodic-roslib
+Description: A runtime message handler for ROS.
+ Allows subscription, publishing, calling of services and actions with messages known only at runtime.
