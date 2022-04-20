@@ -1,0 +1,42 @@
+ros-noetic-ros-babel-fish-test-msgs (0.9.3-1buster) buster; urgency=high
+
+
+
+ -- Stefan Fabian <ros_babel_fish@stefanfabian.me>  Wed, 20 Apr 2022 00:00:00 -0000
+
+ros-noetic-ros-babel-fish-test-msgs (0.9.2-1buster) buster; urgency=high
+
+  * Accept True and False as boolean constants (#4 <https://github.com/StefanFabian/ros_babel_fish/issues/4>)
+  * Contributors: Martin Valgur
+
+ -- Stefan Fabian <ros_babel_fish@stefanfabian.me>  Wed, 22 Dec 2021 00:00:00 -0000
+
+ros-noetic-ros-babel-fish-test-msgs (0.9.1-1buster) buster; urgency=high
+
+  * Added missing build depend for openssl headers to fix build for noetic.
+  * Contributors: Stefan Fabian
+
+ -- Stefan Fabian <ros_babel_fish@stefanfabian.me>  Thu, 29 Oct 2020 00:00:00 -0000
+
+ros-noetic-ros-babel-fish-test-msgs (0.9.0-1buster) buster; urgency=high
+
+  * Added install target for service_info. Cleaned up package.xml
+  * Contributors: Stefan Fabian
+
+ -- Stefan Fabian <ros_babel_fish@stefanfabian.me>  Wed, 28 Oct 2020 00:00:00 -0000
+
+ros-noetic-ros-babel-fish-test-msgs (0.8.0-1buster) buster; urgency=high
+
+  * Added specialization for action client to allow creating an ActionClient with a BabelFishAction.
+  * Renamed targets to include ${PROJECT_NAME} prefix to fix #3 <https://github.com/StefanFabian/ros_babel_fish/issues/3>.
+  * Cleanup for initial release.
+    Added convenience methods.
+    Added a lot of tests.
+  * Cleanup for initial release.
+    Added convenience methods.
+    Added a lot of tests.
+  * Contributors: Stefan Fabian
+
+ -- Stefan Fabian <ros_babel_fish@stefanfabian.me>  Fri, 20 Mar 2020 00:00:00 -0000
+
+
