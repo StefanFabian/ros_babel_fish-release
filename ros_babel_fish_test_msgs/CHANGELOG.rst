@@ -2,6 +2,9 @@
 Changelog for package ros_babel_fish_test_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.9.3 (2022-04-20)
+------------------
+
 0.9.2 (2021-12-22)
 ------------------
 * Accept True and False as boolean constants (`#4 <https://github.com/StefanFabian/ros_babel_fish/issues/4>`_)
