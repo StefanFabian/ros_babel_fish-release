@@ -1,0 +1,13 @@
+Source: ros-noetic-ros-babel-fish
+Section: misc
+Priority: optional
+Maintainer: Stefan Fabian <ros_babel_fish@stefanfabian.me>
+Build-Depends: debhelper (>= 9.0.0), libssl-dev, openssl, ros-noetic-actionlib, ros-noetic-catkin, ros-noetic-geometry-msgs <!nocheck>, ros-noetic-ros-babel-fish-test-msgs <!nocheck>, ros-noetic-rosapi <!nocheck>, ros-noetic-roscpp, ros-noetic-roscpp-tutorials <!nocheck>, ros-noetic-rosgraph-msgs <!nocheck>, ros-noetic-roslib, ros-noetic-rostest <!nocheck>, ros-noetic-std-msgs <!nocheck>, ros-noetic-std-srvs <!nocheck>, ros-noetic-visualization-msgs <!nocheck>
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-noetic-ros-babel-fish
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libssl-dev, openssl, ros-noetic-actionlib, ros-noetic-roscpp, ros-noetic-roslib
+Description: A runtime message handler for ROS.
+ Allows subscription, publishing, calling of services and actions with messages known only at runtime.
